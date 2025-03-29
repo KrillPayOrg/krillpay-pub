@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "963TFASKGR.com.app.krillpay"
+        ],
+        "components": [
+          {
+            "/": "/plaid/*",
+            "comment": "Matches any URL path whose path starts with /plaid/"
+          }
+        ]
+      }
+    ]
+  }
+}

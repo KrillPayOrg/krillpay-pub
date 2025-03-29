@@ -1,0 +1,27 @@
+import * as React from 'react';
+import {Defs, Image, Pattern, Rect, Svg, Use} from 'react-native-svg';
+
+const SplashLogo = ({width = '100%', height = '59'}) => {
+  return (
+    <Svg width={width} height={height} viewBox="0 0 200 200" fill="none">
+      <Rect width={width} height={height} fill="url(#pattern0)" />
+      <Defs>
+        <Pattern
+          id="pattern0"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1">
+          <Use xlinkHref="#image0_6077_1115" transform="scale(0.005)" />
+        </Pattern>
+        <Image
+          id="image0_6077_1115"
+          width="200"
+          height="200"
+          xlinkHref="data:image/png;base64,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"
+        />
+      </Defs>
+    </Svg>
+  );
+};
+
+export default SplashLogo;
